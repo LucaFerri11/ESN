@@ -1,8 +1,11 @@
 import './App.css';
+import Header from './pages/Header/Header';
 
 function App() {
   return (
-    <div></div>
+    <div>
+      <Header></Header>
+    </div>
   );
 }
 

@@ -1,0 +1,28 @@
+.header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center; 
+    justify-items: center;
+    row-gap: 20px;
+    /* justify-content: space-evenly; */
+    background-color: burlywood;
+}
+.menu{
+    margin-left: 40px;
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    font-size: larger;
+}
+.mainTitle{
+    font-family: 'MandatoryPlaything';
+    font-size: 50px;
+    color:#fff;
+    font-weight: 1;
+}
+.logo{
+    width: 170px;
+    align-self: flex-start;
+    /* margin-top: 20px; */
+}

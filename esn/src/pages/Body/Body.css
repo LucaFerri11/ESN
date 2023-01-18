@@ -1,0 +1,11 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding: 30px;
+    width: 95%;
+    max-width: 100%;
+    min-height: 100vh;
+}

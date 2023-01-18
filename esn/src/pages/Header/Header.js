@@ -1,21 +1,28 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <div className="header">
         <img src="https://esncoruna.org/sites/default/files/ES-coruna-logo-colour-RGB.png" className="logo"></img>  
         <div className="menu">
-        <h3>
-          About Us
-        </h3>
-        <h3>
-          Gallery
-        </h3>
-        <h3>
-          Calendar
-        </h3>
-      </div>
+          <Link to={"/"} className="link">
+            About Us
+          </Link>
+          <Link to={"/gallery"} className="link">
+            Gallery
+          </Link>
+          <Link to={"/buddy"} className="link">
+            Buddy
+          </Link>
+          <Link to={"/esncard"} className="link">
+            ESN Card
+          </Link>
+          <Link to={"/contact"} className="link">
+            Contact
+          </Link>
+        </div>
     </div>
   );
 }

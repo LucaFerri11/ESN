@@ -1,28 +1,45 @@
-.header{
-    width: 100%;
+.header {
+    border-radius: 10px;
+    max-width: 100%;
     height: auto;
     display: flex;
     align-items: center; 
     justify-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    /* margin: 16px 24px; */
     row-gap: 20px;
     /* justify-content: space-evenly; */
-    background-color: burlywood;
+    z-index: 3;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgb(52, 71, 103);
+    border-radius: 0.75rem;
+    box-shadow: rgb(0 0 0 / 10%) 0rem 0.25rem 0.375rem -0.0625rem, rgb(0 0 0 / 6%) 0rem 0.125rem 0.25rem -0.0625rem;
+    backdrop-filter: saturate(200%) blur(30px);
+    margin-top: 30px;
 }
-.menu{
-    margin-left: 40px;
+
+.menu {
+    margin-left: 60px;
     display: flex;
     justify-content: start;
+    align-items: center;
     gap: 40px;
     font-size: larger;
 }
-.mainTitle{
-    font-family: 'MandatoryPlaything';
-    font-size: 50px;
-    color:#fff;
-    font-weight: 1;
-}
-.logo{
-    width: 170px;
+
+.logo {
+    width: 130px;
+    max-width: 100%;
     align-self: flex-start;
-    /* margin-top: 20px; */
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(52, 71, 103);
+    font-size: 1.5rem;
+    font-weight: 500;
 }

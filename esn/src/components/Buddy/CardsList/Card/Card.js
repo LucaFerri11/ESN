@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import Portrait from "../../../assets/Images/Portrait.jpg"
+import Portrait from "../../../../assets/Images/Portrait.jpg"
 
 function Card(props) {
   return (
@@ -9,7 +9,7 @@ function Card(props) {
         <img
           // style={{ width: 110 }}
           src={Portrait}
-          alt="face"
+          alt="portrait"
           className="portrait"
         />
         <span className="teamName">Uxue Bogajo</span> 

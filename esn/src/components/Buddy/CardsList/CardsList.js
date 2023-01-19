@@ -1,6 +1,6 @@
 import React from "react";
 import "./CardsList.css";
-import Card from "../Card/Card";
+import Card from "./Card/Card";
 
 function CardsList(props) {
   const cards = [];

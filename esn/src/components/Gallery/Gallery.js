@@ -10,7 +10,7 @@ function Gallery() {
 
     return (
         <div className='gallery'>
-            gallery
+            &nbsp;
             <PhotoAlbum layout="rows" photos={photos} />
         </div>
     )

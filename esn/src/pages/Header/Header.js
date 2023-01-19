@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div className="header">
-        <img src="https://esncoruna.org/sites/default/files/ES-coruna-logo-colour-RGB.png" className="logo"></img>  
+        <Link to={"/"} > 
+          <img src="https://esncoruna.org/sites/default/files/ES-coruna-logo-colour-RGB.png" className="logo"></img> 
+        </Link>          
         <div className="menu">
           <Link to={"/"} className="link">
             About Us

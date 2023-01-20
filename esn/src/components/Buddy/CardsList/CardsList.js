@@ -6,9 +6,7 @@ function CardsList(props) {
   const cards = [];
 
   for (let i = 0; i < 8; i++) {
-    cards.push(
-      <Card />
-    );
+    cards.push(<Card />);
   }
   return (
     <div className="scroll">

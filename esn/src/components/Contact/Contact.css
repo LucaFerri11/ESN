@@ -1,27 +1,27 @@
 .mainContainer {
-    background-color: whitesmoke;
-    border-radius: 10px;
-    opacity: 0.8;
-    letter-spacing: -0.125px;
-    font-family: "Roboto Slab", sans-serif;
-    line-height: 1.25;
-    font-weight: 700;
-    text-align: center;
-    width: 100%;
-    margin-top: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  opacity: 0.8;
+  letter-spacing: -0.125px;
+  font-family: "Roboto Slab", sans-serif;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .left {
-    float: left;
-    width: 60%;
-    display: flex;
-    align-items: flex-start;
-    /* justify-content: center; */
-    /* padding: 30px; */
-    height: 100%;
+  float: left;
+  width: 60%;
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: center; */
+  /* padding: 30px; */
+  height: 100%;
 }
 
 .right {
-    float: right;
-    width: 40%;
+  float: right;
+  width: 40%;
 }

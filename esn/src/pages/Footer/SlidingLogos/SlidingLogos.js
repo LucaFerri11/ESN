@@ -1,5 +1,5 @@
-import React from 'react';
-import './SlidingLogos.css';
+import React from "react";
+import "./SlidingLogos.css";
 
 function SlidingLogos(props) {
   return (
@@ -29,4 +29,4 @@ function SlidingLogos(props) {
   );
 }
 
-export default SlidingLogos
+export default SlidingLogos;

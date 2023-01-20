@@ -1,10 +1,8 @@
-import React from 'react'
-import CardsList from './CardsList/CardsList'
+import React from "react";
+import CardsList from "./CardsList/CardsList";
 
 function Buddy() {
-  return (
-    <CardsList />
-  )
+  return <CardsList />;
 }
 
-export default Buddy
+export default Buddy;

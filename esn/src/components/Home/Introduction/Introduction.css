@@ -1,25 +1,25 @@
 .counters {
-    display: flex;
-    justify-content: center;
-    gap: 8rem;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
 }
 
 .counterBlock {
-    text-align: center;    
-    color: rgb(26, 115, 232);    
-    font-family: "Roboto Slab", sans-serif; 
-    font-size: 1.5rem;
-    line-height: 1.25;
-    font-weight: 700;
-    /* padding: 10px; */
+  text-align: center;
+  color: rgb(26, 115, 232);
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 700;
+  /* padding: 10px; */
 }
 
-.counterBlock .counterTitle {    
-    margin-top: -30px;
-    color: rgb(20, 20, 20);    
+.counterBlock .counterTitle {
+  margin-top: -30px;
+  color: rgb(20, 20, 20);
 }
 
-.title{
-    font-family: "Roboto Slab", sans-serif;
-    font-size: 3.2vw;
+.title {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 3.2vw;
 }

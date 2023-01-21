@@ -1,18 +1,16 @@
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
   background-color: transparent;
-  margin-top: 2.5rem;
-  padding: 20px;
   height: 367px;
   width: 570px;
   max-width: 100%;
-  /* border: 1px solid #f1f1f1; */
+  border-radius: 2rem;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip-box-inner {
-  border-radius: 10px;
+  border-radius: 2rem;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
   position: relative;
   width: 100%;
@@ -45,13 +43,16 @@
 /* Style the back side */
 .flip-box-back {
   /* text-align: center; */
-  background-color: rgb(133, 184, 197);
+  border-radius: 2rem;
+  background-color: #15a1d4;
   color: white;
   transform: rotateX(180deg);
 }
 
 .esncard {
   width: 100%;
+  border-radius: 2rem;
+  opacity: 1;
 }
 
 .esncardInfo {

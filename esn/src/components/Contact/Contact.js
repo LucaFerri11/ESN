@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import MailForm from "./MailForm/MailForm";
+import SocialProfiles from "./SocialProfiles/SocialProfiles";
 
 function Contact() {
   return (
@@ -8,7 +9,9 @@ function Contact() {
       <div className="left">
         <MailForm></MailForm>
       </div>
-      <div className="right">DESTRA</div>
+      <div className="right">
+        <SocialProfiles></SocialProfiles>
+      </div>
     </div>
   );
 }

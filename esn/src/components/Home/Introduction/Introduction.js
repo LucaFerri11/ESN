@@ -25,6 +25,14 @@ function Introduction() {
           <h5 className="counterTitle">Magic Moments</h5>
         </div>
       </div>
+      <div className="counters-second">
+        <div className="counterBlock">
+          <h1>
+            <span>&nbsp;Much More</span>
+          </h1>
+          <h5 className="counterTitle">&nbsp;is waiting for you</h5>
+        </div>
+      </div>
     </div>
   );
 }

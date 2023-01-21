@@ -4,7 +4,22 @@
   justify-items: center;
   justify-content: center; */
   /* flex-direction: column; */
-  background-color: #e5eaf5;
+  /* background-color: #e5eaf5; */
   width: 100%;
   min-height: 100vh;
+  position: relative;
+  background-color: blanchedalmond;
+}
+
+.appWimage {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-image: url("./assets/Images/BeachReunion.png");
+
+  /* background-color: #080808; */
+  /* height: 500px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

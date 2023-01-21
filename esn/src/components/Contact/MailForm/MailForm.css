@@ -1,0 +1,59 @@
+.mailform {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  margin: 1%;
+}
+
+.titleform {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 2.2vw;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+}
+
+.legend {
+  margin-top: 3%;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 550;
+}
+
+.input {
+  border-radius: 0.8rem;
+  height: 2rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.3rem;
+  /* margin-top: 1%; */
+}
+
+#inputmessage {
+  border-radius: 0.8rem;
+  height: 4.5rem;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.1rem;
+}
+
+.btn {
+  width: 20%;
+  border-radius: 0.8rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-left: 80%;
+}
+
+.btn:hover {
+  background-color: rgb(46, 122, 14);
+}

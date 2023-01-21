@@ -27,41 +27,30 @@ function MailForm() {
   };
 
   return (
-    <div className="container">
+    <div className="mailform">
       <form onSubmit={handleSubmit} ref={form}>
-        <h1 className="text-center">Registration Form</h1>
-        <div className="form-row">
-          <div className="form-group col-md-6">
-            <label htmlFor="FirstName">First Name</label>
-            <input type="text" className="form-control" name="FirstName" />
-          </div>
-          <div className="form-group col-md-6">
-            <label htmlFor="LastName">Last Name</label>
-            <input type="text" className="form-control" name="LastName" />
-          </div>
-          {/* <div className="form-group col-12">
-                <label htmlFor="inputAddress">Address</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="inputAddress"
-                  placeholder="1234 Main St"
-                  name="user_address"
-                />
-              </div> */}
-          <div className="form-group col-md-6">
-            <label htmlFor="message">message</label>
-            <textarea
-              type="text"
-              className="form-control"
-              id="inputmessage"
-              name="message"
-            />
-          </div>
+        <h1 className="titleform">Share your opinion with us</h1>
+        <div className="form-fields">
+          <label htmlFor="FirstName" className="legend">
+            First Name
+          </label>
+          <input type="text" className="input" name="FirstName" />
+          <label htmlFor="LastName" className="legend">
+            Last Name
+          </label>
+          <input type="text" className="input" name="LastName" />
+          <label htmlFor="email" className="legend">
+            Email
+          </label>
+          <input type="text" className="input" name="email" />
+          <label htmlFor="message" className="legend">
+            Message
+          </label>
+          <textarea type="text" id="inputmessage" name="message" />
         </div>
 
-        <button type="submit" className="btn btn-primary">
-          Sign in
+        <button type="submit" className="btn">
+          Send
         </button>
       </form>
     </div>

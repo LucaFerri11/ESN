@@ -6,22 +6,32 @@
   font-family: "Roboto Slab", sans-serif;
   line-height: 1.25;
   font-weight: 700;
-  text-align: center;
+  /* text-align: center; */
   width: 100%;
-  margin-top: 10px;
+  height: 100%;
+  /* margin-top: 10px; */
+  /* display: grid;
+  grid-template-areas: "header header main main";
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px; */
+  display: flex;
+  justify-content: space-around;
+  background-color: whitesmoke;
 }
 
-.left {
+/* .left {
   float: left;
   width: 60%;
   display: flex;
   align-items: flex-start;
-  /* justify-content: center; */
-  /* padding: 30px; */
   height: 100%;
+  grid-area: header;
 }
 
 .right {
   float: right;
   width: 40%;
-}
+  height: 100%;
+  grid-area: main;
+} */

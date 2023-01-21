@@ -1,8 +1,10 @@
 .app {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: center; */
+  /* flex-direction: column; */
   background-color: #e5eaf5;
+  width: 100%;
+  min-height: 100vh;
 }

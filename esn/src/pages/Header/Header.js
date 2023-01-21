@@ -4,29 +4,31 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <div className="header">
-      <Link to={"/"}>
-        <img
-          src="https://esncoruna.org/sites/default/files/ES-coruna-logo-colour-RGB.png"
-          className="logo"
-        ></img>
-      </Link>
-      <div className="menu">
-        <Link to={"/"} className="link">
-          About Us
+    <div className="headerSpace">
+      <div className="header">
+        <Link to={"/"}>
+          <img
+            src="https://esncoruna.org/sites/default/files/ES-coruna-logo-colour-RGB.png"
+            className="logo"
+          ></img>
         </Link>
-        <Link to={"/gallery"} className="link">
-          Gallery
-        </Link>
-        <Link to={"/buddy"} className="link">
-          Buddy
-        </Link>
-        <Link to={"/esncard"} className="link">
-          ESN Card
-        </Link>
-        <Link to={"/contact"} className="link">
-          Contact
-        </Link>
+        <div className="menu">
+          <Link to={"/"} className="link">
+            About Us
+          </Link>
+          <Link to={"/gallery"} className="link">
+            Gallery
+          </Link>
+          <Link to={"/buddy"} className="link">
+            Buddy
+          </Link>
+          <Link to={"/esncard"} className="link">
+            ESN Card
+          </Link>
+          <Link to={"/contact"} className="link">
+            Contact
+          </Link>
+        </div>
       </div>
     </div>
   );

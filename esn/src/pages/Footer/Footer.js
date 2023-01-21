@@ -6,7 +6,7 @@ import SlidingLogos from "./SlidingLogos/SlidingLogos";
 function Footer() {
   return (
     <div className="footer">
-      &#169; ESN Coruña -
+      &nbsp; &nbsp; &#169; ESN Coruña -
       <Link to={"/privacy"} className="linkFooter">
         &nbsp; Privacy
       </Link>

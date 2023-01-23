@@ -14,7 +14,7 @@ function SocialProfiles() {
   return (
     <div className="social">
       <h1>We are social!</h1>
-      <h2> Connect with us on all the platform</h2>
+      <h2 className="second-title">Let's connect on all the platform</h2>
       <div className="logos">
         <Tooltip title={facebookTooltip} arrow>
           <a
@@ -38,8 +38,9 @@ function SocialProfiles() {
         </Tooltip>
         <Tooltip title={whatsappTooltip} arrow>
           <a
-            href={"https://www.facebook.com/groups/1384367125377692"}
-            target="_blank"
+            href=""
+            // href={"https://www.facebook.com/groups/1384367125377692"}
+            // target="_blank"
             className="linkFooter"
           >
             {" "}

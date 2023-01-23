@@ -5,15 +5,14 @@
     /* align-content: space-around; */
 }
 
-/* .logos {
-    display: flex;
-    width: 50px;
-} */
+.second-title {
+    margin-top: -10px;
+}
 
 .logo-img {
     max-width: auto;
     width: 5rem;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-left: 15px;
     border-radius: 50px;
 }

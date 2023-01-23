@@ -5,7 +5,6 @@
   align-items: center;
   justify-content: center;
   background-color: whitesmoke;
-  margin: 1%;
 }
 
 .titleform {
@@ -55,5 +54,5 @@
 }
 
 .btn:hover {
-  background-color: rgb(46, 122, 14);
+  background-color: rgb(255, 255, 255);
 }

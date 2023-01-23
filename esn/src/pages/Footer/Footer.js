@@ -17,19 +17,19 @@ function Footer() {
       </Link>
       &nbsp;
       <a
-        href={"https://www.instagram.com/esncoruna/"}
-        target="_blank"
-        className="linkFooter"
-      >
-        &nbsp; <BsInstagram />
-      </a>
-      &nbsp;
-      <a
         href={"https://www.facebook.com/groups/1384367125377692"}
         target="_blank"
         className="linkFooter"
       >
         &nbsp; <BsFacebook />
+      </a>
+      &nbsp;
+      <a
+        href={"https://www.instagram.com/esncoruna/"}
+        target="_blank"
+        className="linkFooter"
+      >
+        &nbsp; <BsInstagram />
       </a>
       &nbsp;
       <a

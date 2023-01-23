@@ -1,0 +1,19 @@
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* align-content: space-around; */
+}
+
+/* .logos {
+    display: flex;
+    width: 50px;
+} */
+
+.logo-img {
+    max-width: auto;
+    width: 5rem;
+    margin-top: 5px;
+    margin-left: 15px;
+    border-radius: 50px;
+}

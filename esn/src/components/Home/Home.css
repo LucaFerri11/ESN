@@ -7,22 +7,14 @@
 }
 
 .control-arrow {
-  width: 6%;
+  width: 5%;
   height: 100%;
-  border-radius: 1rem;
-  /* padding-top: 30px;
-  margin-top: 15px; */
-  /* margin-bottom: 50px; */
+  border-radius: 0.5rem;
 }
 
-/* .control-prev {
-  margin: 5% 0%;
-} */
-
 .home {
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.85);
   border-radius: 10px;
-  opacity: 0.85;
   letter-spacing: -0.125px;
   font-family: "Roboto Slab", sans-serif;
   line-height: 1.25;

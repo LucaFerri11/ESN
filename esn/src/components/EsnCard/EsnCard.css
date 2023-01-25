@@ -1,0 +1,8 @@
+.container-scroll {
+    /* background-color: white; */
+    /* margin-top: -2rem; */
+    /* width: 95%; */
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}

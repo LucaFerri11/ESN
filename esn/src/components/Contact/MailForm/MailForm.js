@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./MailForm.css";
 import emailjs, { init } from "@emailjs/browser";
 import Alert from "@mui/material/Alert";
+// import { ReCAPTCHA } from "react-google-recaptcha";
 
 function MailForm() {
   const [isSucces, setIsSuccess] = useState(false);
@@ -10,6 +11,7 @@ function MailForm() {
   const [isMessageValid, setIsMessageValid] = useState(true);
   init("Pn5UATHv8A6TrZD8m");
   const form = useRef();
+  // const captchaRef = useRef();
 
   const messageChangeHandler = (e) => {
     if (e.target.value.trim().length > 0) {
@@ -84,7 +86,27 @@ function MailForm() {
             </Alert>
           )}
         </div>
+
+        {/* <ReCAPTCHA
+          sitekey={"6LcpICEkAAAAAPwZxh7rK6EVntm14ucuGotUVTCa"}
+        ></ReCAPTCHA> */}
+
+        {/* <reCAPTCHA
+          sitekey={process.env.RECAPTCHA_SITE_KEY}
+          ref={captchaRef}
+          size="120px"
+        /> */}
         <div className="footer-mailform">
+          {/* <script
+            src="https://www.google.com/recaptcha/api.js"
+            async
+            defer
+          ></script>
+          <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+          <ReCAPTCHA
+            sitekey="6LcSLyEkAAAAAFmNW2aItDB--wJQpJrTeIaN-POM"
+            size="normal"
+          /> */}
           <button type="submit" className="btn">
             Send
           </button>

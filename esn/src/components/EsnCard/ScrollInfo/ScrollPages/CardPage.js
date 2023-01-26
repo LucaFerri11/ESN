@@ -8,21 +8,22 @@ import {
   MoveOut,
   Sticky,
 } from "react-scroll-motion";
-import EsnCardRight from "../../../assets/Images/EsnCardRight.png";
-import EsnCardLeft from "../../../assets/Images/EsnCardLeft.png";
+import EsnCardRight from "../../../../assets/Images/EsnCardRight.png";
+import EsnCardLeft from "../../../../assets/Images/EsnCardLeft.png";
 
 function CardPage() {
   const widthPercentage = useCalculateWidth(90) + "%";
-  const stickyLeft = useCalculateSticky(40.6);
-  const stickyRight = useCalculateSticky(61);
+  const stickyLeft = useCalculateSticky({ left: 40.6, top: 50 });
+  const stickyRight = useCalculateSticky({ left: 61, top: 50 });
 
-  console.log(stickyLeft);
-  console.log(stickyRight);
-
-  const MoveOutCenterLeft = batch(Fade(), Sticky(stickyLeft), MoveOut(-250, 0));
+  const MoveOutCenterLeft = batch(
+    Fade(),
+    Sticky(stickyLeft.left),
+    MoveOut(-250, 0)
+  );
   const MoveOutCenterRight = batch(
     Fade(),
-    Sticky(stickyRight),
+    Sticky(stickyRight.left),
     MoveOut(250, 0)
   );
 

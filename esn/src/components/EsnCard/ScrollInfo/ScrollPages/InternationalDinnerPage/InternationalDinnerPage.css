@@ -1,0 +1,16 @@
+.dinner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    max-width: 100%;
+}
+
+.dinner-container img {
+    border-radius: 5px;
+    border-style: solid;
+    max-width: 100%;
+}

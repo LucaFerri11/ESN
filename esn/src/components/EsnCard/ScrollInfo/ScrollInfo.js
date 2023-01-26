@@ -1,5 +1,4 @@
 import React from "react";
-import "./EsnCard.css";
 import {
   Animator,
   ScrollContainer,
@@ -9,27 +8,27 @@ import {
   Sticky,
   ZoomOut,
 } from "react-scroll-motion";
-import SpinningGlobe from "../../assets/Images/SpinningGlobe.gif";
+import SpinningGlobe from "../../../assets/Images/SpinningGlobe.gif";
 import CardPage from "./ScrollPages/CardPage";
 import RyanairPage from "./ScrollPages/RyanairPage";
-import InternationalDinnerPage from "./ScrollPages/InternationalDinnerPage";
+import InternationalDinnerPage from "./ScrollPages/InternationalDinnerPage/InternationalDinnerPage";
+import ConditionsPage from "./ScrollPages/ConditionsPage/ConditionsPage";
 
 function EsnCard() {
-  const ZoomInScrollOut = batch(Sticky(), Fade(), ZoomOut(1, 4));
+  const ZoomInScrollOut = batch(Sticky(), Fade(), ZoomOut(1, 2.5));
 
   return (
-    // <div className="container-scroll">
-    <ScrollContainer>
+    <ScrollContainer snap="mandatory">
       <CardPage />
       <ScrollPage>
         <Animator animation={ZoomInScrollOut}>
           <span
             style={{
-              fontSize: "20px",
+              fontSize: "40px",
               fontFamily: "Roboto Slab, sans-serif",
             }}
           >
-            Why would I need it? &#129300;
+            Why would you need it? &#129300;
           </span>
         </Animator>
       </ScrollPage>
@@ -41,7 +40,7 @@ function EsnCard() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              fontSize: "20px",
+              fontSize: "40px",
               fontFamily: "Roboto Slab, sans-serif",
               fontWeight: "bold",
             }}
@@ -53,8 +52,8 @@ function EsnCard() {
         </Animator>
       </ScrollPage>
       <InternationalDinnerPage />
+      <ConditionsPage />
     </ScrollContainer>
-    // </div>
   );
 }
 

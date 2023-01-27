@@ -18,7 +18,7 @@ function EsnCard() {
   const ZoomInScrollOut = batch(Sticky(), Fade(), ZoomOut(1, 2.5));
 
   return (
-    <ScrollContainer snap="mandatory">
+    <ScrollContainer snap="mandatory" style={{ color: "white" }}>
       <CardPage />
       <ScrollPage>
         <Animator animation={ZoomInScrollOut}>

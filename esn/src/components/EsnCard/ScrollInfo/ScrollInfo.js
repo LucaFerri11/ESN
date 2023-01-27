@@ -45,9 +45,9 @@ function EsnCard() {
               fontWeight: "bold",
             }}
           >
-            <img src={SpinningGlobe} style={{ width: "5%" }} />
+            <img src={SpinningGlobe} style={{ width: "9%" }} />
             &nbsp; Cultural Exchange Events &nbsp;
-            <img src={SpinningGlobe} style={{ width: "5%" }} />
+            <img src={SpinningGlobe} style={{ width: "9%" }} />
           </div>
         </Animator>
       </ScrollPage>

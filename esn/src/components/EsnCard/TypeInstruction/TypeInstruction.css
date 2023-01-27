@@ -1,0 +1,93 @@
+.type-info {
+    width: auto;
+    /* height: 15vh; */
+    position: fixed;
+    bottom: 5vh;
+    right: 0;
+    animation: 
+      showing 7s steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+.type-info p {
+    color: white;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 10px auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; 
+}
+
+.type-info p:nth-child(1) {
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+    animation-fill-mode: forwards;
+}
+
+.type-info p:nth-child(2) {
+    opacity: 0;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+
+.type-info p:nth-child(3) {
+    opacity: 0;
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+    animation-fill-mode: forwards;
+    animation-delay: 7s;
+}
+
+.type-info a {
+    color: rgb(134 134 255);
+}
+
+.type-info a:hover {
+    cursor: pointer;
+    color: rgba(68, 68, 255, 0.986);
+}
+
+@keyframes showing {
+    0% {
+        margin-bottom: -74px;
+    }
+    49% {
+        margin-bottom: -74px;
+    }
+    50% {
+        margin-bottom: -37px;
+    }
+    99% {
+        margin-bottom: -37px;
+    }
+    100% {
+        margin-bottom: 0px;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        width: 100%
+    }
+}
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}

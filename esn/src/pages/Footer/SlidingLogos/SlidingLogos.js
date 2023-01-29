@@ -1,29 +1,43 @@
 import React from "react";
 import "./SlidingLogos.css";
+import logo from "../../../assets/Images/logo.png";
+import logo1 from "../../../assets/Images/logo1.png";
 
 function SlidingLogos(props) {
+  let images = [
+    "../../../assets/Images/logo.png",
+    "../../../assets/Images/logo1.png",
+  ];
+  // for (let i = 0; i < 10; i + 2) {
+  //   images[i] = "../../../assets/Images/logo.png";
+  //   images[i + 1] = "../../../assets/Images/logo1.png";
+  // }
+
   return (
-    <div className=" flex items-center min-h-screen justify-center">
-      {/* 1. */}
-      <div className="w-[200%] h-20 border-t border-b border-gray-600 overflow-hidden relative">
-        {/* 2. */}
-        <div className="w-[200%] flex items-center h-20 justify-around absolute left-0 animate gap-20 animate">
-          {/* 3 */}
-          {props.logos.map((i) => {
-            return (
-              <div className="flex justify-center items-start w-[20rem]">
-                <img src={i} />
-              </div>
-            );
-          })}
-          {props.logos.map((i) => {
-            return (
-              <div className="flex justify-center items-start w-[20rem]">
-                <img src={i} />
-              </div>
-            );
-          })}
+    <div className="static-container">
+      {/* 2. */}
+      <div className="animated-container">
+        {/* 3 */}
+        <div className="img-container">
+          <img src="../../../assets/Images/logo.png" />
         </div>
+        <div className="img-container">
+          <img src="../../../assets/Images/logo.png" />
+        </div>
+        <div className="img-container">
+          <img src="../../../assets/Images/logo.png" />
+        </div>
+        {/* {images.map((i) => {
+          return (
+          );
+        })} */}
+        {/* {images.map((i) => {
+          return (
+            <div className="img-container">
+              <img src={i} />
+            </div>
+          );
+        })} */}
       </div>
     </div>
   );

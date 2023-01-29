@@ -9,9 +9,9 @@ function Contact() {
       <div className="left">
         <MailForm></MailForm>
       </div>
-      <div className="right">
+      {/* <div className="right">
         <SocialProfiles></SocialProfiles>
-      </div>
+      </div> */}
     </div>
   );
 }

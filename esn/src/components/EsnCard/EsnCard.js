@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./EsnCard.css";
 import ScrollInfo from "./ScrollInfo/ScrollInfo";
 import TypeInstruction from "./TypeInstruction/TypeInstruction";
+import ApplyForm from "./UI/ApplyForm";
 
 function EsnCard() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [showApplyForm, setShowApplyForm] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
@@ -18,12 +20,20 @@ function EsnCard() {
     };
   }, []);
 
-  return (
-    <div>
-      <ScrollInfo />
-      {scrollPosition > 500 ? "" : <TypeInstruction />}
-    </div>
-  );
+  if (!showApplyForm) {
+    return (
+      <div>
+        <ScrollInfo onClick={() => setShowApplyForm(true)} />
+        {scrollPosition > 500 ? (
+          ""
+        ) : (
+          <TypeInstruction onClick={() => setShowApplyForm(true)} />
+        )}
+      </div>
+    );
+  } else {
+    return <ApplyForm></ApplyForm>;
+  }
 }
 
 export default EsnCard;

@@ -14,7 +14,7 @@ import RyanairPage from "./ScrollPages/RyanairPage";
 import InternationalDinnerPage from "./ScrollPages/InternationalDinnerPage/InternationalDinnerPage";
 import ConditionsPage from "./ScrollPages/ConditionsPage/ConditionsPage";
 
-function EsnCard() {
+function EsnCard(props) {
   const ZoomInScrollOut = batch(Sticky(), Fade(), ZoomOut(1, 2.5));
 
   return (
@@ -52,7 +52,7 @@ function EsnCard() {
         </Animator>
       </ScrollPage>
       <InternationalDinnerPage />
-      <ConditionsPage />
+      <ConditionsPage onClick={props.onClick} />
     </ScrollContainer>
   );
 }

@@ -5,7 +5,7 @@
     bottom: 5vh;
     right: 0;
     animation: 
-      showing 7s steps(30, end);
+      showing 5s steps(30, end);
     animation-fill-mode: forwards;
 }
 
@@ -23,7 +23,7 @@
 
 .type-info p:nth-child(1) {
     animation: 
-      typing 3.5s steps(30, end),
+      typing 2.5s steps(30, end),
       blink-caret .5s step-end infinite;
     animation-fill-mode: forwards;
 }
@@ -31,19 +31,19 @@
 .type-info p:nth-child(2) {
     opacity: 0;
     animation: 
-      typing 3.5s steps(30, end),
+      typing 2.5s steps(30, end),
       blink-caret .5s step-end infinite;
     animation-fill-mode: forwards;
-    animation-delay: 3.5s;
+    animation-delay: 2.5s;
 }
 
 .type-info p:nth-child(3) {
     opacity: 0;
     animation: 
-      typing 3.5s steps(30, end),
+      typing 2.5s steps(30, end),
       blink-caret .5s step-end infinite;
     animation-fill-mode: forwards;
-    animation-delay: 7s;
+    animation-delay: 5s;
 }
 
 .type-info a {

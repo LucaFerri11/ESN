@@ -13,7 +13,7 @@ const MoveInCenterRight = batch(Sticky(50, 37), FadeIn(), MoveIn(1800, 0));
 const MoveInCenterLeft = batch(Sticky(50, 53), FadeIn(), MoveIn(-1800, 0));
 const MoveInCenterBottom = batch(Sticky(50, 72), FadeIn(), MoveIn(0, 500));
 
-function Condition() {
+function Condition(props) {
   return (
     <ScrollPage>
       <Animator animation={MoveInCenterTop}>
@@ -41,7 +41,7 @@ function Condition() {
           <h3>What are you waiting for?</h3>
           <h3>compile the form and...</h3>
           <br />
-          <button>JOIN US</button>
+          <button onClick={props.onClick}>JOIN US</button>
         </div>
       </Animator>
     </ScrollPage>

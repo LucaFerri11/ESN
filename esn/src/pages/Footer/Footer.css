@@ -1,21 +1,55 @@
-.footer {
+.grid-container {
   width: 100%;
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  row-gap: 20px;
-  opacity: 0.8;
-  background: rgb(62 62 62 / 78%);
-  color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-areas:
+    "social logos logos logos logos logos logos"
+    "disclaimer logos logos logos logos logos logos";
+  z-index: 3;
+  opacity: 1;
+  background: rgba(12, 12, 12, 0.274);
+  color: white;
   box-shadow: rgb(0 0 0 / 10%) 0rem 0.25rem 0.375rem -0.0625rem,
     rgb(0 0 0 / 6%) 0rem 0.125rem 0.25rem -0.0625rem;
   position: fixed;
   bottom: 0;
 }
 
+.social {
+  grid-area: social;
+  overflow: hidden;
+  height: 4vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  margin-top: 0.8vh;
+}
+
+.social a {
+  font-size: 2rem;
+}
+
 .linkFooter {
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1rem;
+  color: white;
   font-weight: 400;
+}
+
+.disclaimer {
+  grid-area: disclaimer;
+  height: 2.5vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos {
+  grid-area: logos;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
 }

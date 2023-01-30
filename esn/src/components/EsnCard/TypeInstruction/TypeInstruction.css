@@ -2,7 +2,7 @@
     width: auto;
     /* height: 15vh; */
     position: fixed;
-    bottom: 5vh;
+    bottom: 7.3vh;
     right: 0;
     animation: 
       showing 5s steps(30, end);
@@ -12,7 +12,7 @@
 .type-info p {
     color: white;
     font-family: "Roboto Slab", sans-serif;
-    font-size: 20px;
+    font-size: 1.3vw;
     font-weight: 300;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */

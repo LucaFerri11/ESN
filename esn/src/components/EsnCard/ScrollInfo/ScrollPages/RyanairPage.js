@@ -45,7 +45,7 @@ function RyanairPage() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            fontSize: "25px",
+            fontSize: "1.7vw",
             fontFamily: "Roboto Slab, sans-serif",
             fontWeight: "bold",
           }}
@@ -59,7 +59,7 @@ function RyanairPage() {
       <Animator animation={MoveInMiddleLowRight}>
         <div
           style={{
-            fontSize: "25px",
+            fontSize: "1.7vw",
             fontFamily: "Roboto Slab, sans-serif",
             fontWeight: "bold",
           }}

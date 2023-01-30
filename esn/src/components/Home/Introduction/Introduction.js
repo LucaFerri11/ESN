@@ -28,9 +28,8 @@ function Introduction() {
       <div className="counters-second">
         <div className="counterBlock">
           <h1>
-            <span>&nbsp;Much More</span>
+            <span>Much more is waiting for you</span>
           </h1>
-          <h5 className="counterTitle">&nbsp;is waiting for you</h5>
         </div>
       </div>
     </div>

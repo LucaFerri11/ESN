@@ -12,10 +12,10 @@ function FlippingCard() {
         </div>
         <div class="flip-box-back">
           <div className="esncardInfo">
-            <h2>Get discounts with our partners</h2>
-            <h2>Participate in events</h2>
-            <h2>...and so on</h2>
-            <h2>Click to discover more!</h2>
+            <h2>&#9733; Discounts</h2>
+            <h2>&#9733; Events</h2>
+            <h2>...and way more</h2>
+            <h1>Click to discover more!</h1>
           </div>
         </div>
       </div>

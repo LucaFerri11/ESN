@@ -24,7 +24,7 @@ function EsnCard(props) {
         <Animator animation={ZoomInScrollOut}>
           <span
             style={{
-              fontSize: "40px",
+              fontSize: "2.5vw",
               fontFamily: "Roboto Slab, sans-serif",
             }}
           >
@@ -40,7 +40,7 @@ function EsnCard(props) {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              fontSize: "40px",
+              fontSize: "2.5vw",
               fontFamily: "Roboto Slab, sans-serif",
               fontWeight: "bold",
             }}

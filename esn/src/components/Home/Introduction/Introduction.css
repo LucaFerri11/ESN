@@ -1,26 +1,28 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+}
+
 .counters {
   display: flex;
   justify-content: center;
   gap: 8rem;
-  margin-top: 5%;
 }
 
 .counterBlock {
-  text-align: center;
+  margin-top: 2.5vh;
   color: rgb(26, 115, 232);
   font-family: "Roboto Slab", sans-serif;
-  font-size: 1.5rem;
-  line-height: 1.25;
+  font-size: 1.8vw;
   font-weight: 700;
-  /* padding: 10px; */
 }
 
 .counterBlock .counterTitle {
-  margin-top: -30px;
+  margin-top: -1.5vh;
+  font-size: 1.5vw;
   color: rgb(20, 20, 20);
 }
 
 .title {
-  font-family: "Roboto Slab", sans-serif;
   font-size: 3.2vw;
 }

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./SlidingLogos.css";
-import logo from "../../../assets/Images/logo.png";
+import logo from "../../../assets/Images/logonvidia.png";
 import logo1 from "../../../assets/Images/logo1.png";
 import { Tooltip, tooltipClasses } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 function SlidingLogos(props) {
-  const [onHover, setOnHover] = useState(false);
+  // const [scrollPosition, setScrollPosition] = useState(0);
   let images = [
     logo,
     logo1,
@@ -34,9 +34,14 @@ function SlidingLogos(props) {
     logo1,
   ];
 
+  // const getScrollPosition = () => {
+  //   const animatedContainer = document.getElementById("animated-scroll");
+  //   console.log(animatedContainer.scrollLeft);
+  // };
+
   const HtmlTooltip = styled(({ className, ...props }) => (
     <Tooltip {...props} classes={{ popper: className }} />
-  ))(({ theme }) => ({
+  ))(() => ({
     [`& .${tooltipClasses.tooltip}`]: {
       // backgroundColor: "#f5f5f9",
       color: "rgba(0, 0, 0, 0.87)",
@@ -50,7 +55,12 @@ function SlidingLogos(props) {
   return (
     <div className="static-container">
       {/* 2. */}
-      <div className="animated-container">
+      <div
+        className="animated-container"
+        // style={{ "--first-left-value": `${scrollPosition}s` }}
+        // onMouseLeave={getScrollPosition}
+        // id="animated-scroll"
+      >
         {/* 3 */}
         {images.map((i) => {
           return (
@@ -71,11 +81,7 @@ function SlidingLogos(props) {
                   </React.Fragment>
                 }
               >
-                <img
-                  src={i}
-                  style={{ width: "6.5vh" }}
-                  onMouseLeave={() => setOnHover(false)}
-                />
+                <img src={i} style={{ width: "6.5vh" }} />
               </HtmlTooltip>
             </div>
           );

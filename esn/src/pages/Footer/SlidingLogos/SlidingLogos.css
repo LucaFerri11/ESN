@@ -1,6 +1,6 @@
 @keyframes scroll {
   0% {
-    left: 0;
+    left: var(--first-left-value);
   }
   100% {
     left: -100%;
@@ -28,6 +28,7 @@
   justify-items: space-around;
   position: absolute;
   left: 0;
+  --first-left-value: 0%;
   animation: scroll 15s linear infinite;
   animation-play-state: running;
   gap: 20px;
@@ -39,10 +40,11 @@
   overflow-x: scroll;
 }
 
-.animated-container::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0;
   height: 0;
   background: transparent;
+  overflow: hidden;
 }
 
 .img-container {

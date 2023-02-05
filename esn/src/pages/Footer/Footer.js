@@ -1,60 +1,100 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import SlidingLogos from "./SlidingLogos/SlidingLogos";
-import { BsInstagram, BsFacebook, BsWhatsapp, TbMap2 } from "react-icons/bs";
+import { BsInstagram, BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
-import { Tooltip } from "@mui/material";
+
+import facebookScreen from "../../assets/Images/fbScreen.png";
+import instagramScreen from "../../assets/Images/instagramScreen.png";
+import mapsScreen from "../../assets/Images/mapsScreen.png";
 
 function Footer() {
-  const facebookTooltip =
-    "Join the Facebook group to stay tuned on the latest events";
-  const instagramTooltip = "Follow us on Instagram";
-  const whatsappTooltip = "Join the Whatsapp group to start making new friends";
-  const mapsTooltip = "You can find us here";
+  const [tooltipShow, setTooltipShow] = useState(false);
+  const [socialMedia, setSocialMedia] = useState("");
+  const [tooltipWidth, setTooltipWidth] = useState("395px");
+
+  const description = {
+    facebook: "Join the Facebook group to stay tuned on the latest events",
+    instagram: "Follow us on Instagram",
+    whatsapp: "Join the Whatsapp group to start making new friends",
+    maps: "You can find us here",
+  };
+
+  const imgSrc = {
+    facebook: facebookScreen,
+    instagram: instagramScreen,
+    whatsapp: "",
+    maps: mapsScreen,
+  };
+
+  const showTooltipHandler = () => {
+    const leftContainer = document.getElementById("left-container");
+    setTooltipWidth(leftContainer.offsetWidth - 16 + "px");
+    setTooltipShow(!tooltipShow);
+  };
 
   return (
     <div className="grid-container">
-      <div className="left">
+      <div className="left" id="left-container">
+        {tooltipShow && (
+          <div className="tooltip-container" style={{ width: tooltipWidth }}>
+            <img src={imgSrc[socialMedia]} style={{ width: "100%" }} />
+            <span style={{ paddingTop: "4px" }}>
+              {description[socialMedia]}
+            </span>
+          </div>
+        )}
+
         <div className="social">
-          <Tooltip title={facebookTooltip} arrow placement="top">
-            <a
-              href={"https://www.facebook.com/groups/1384367125377692"}
-              target="_blank"
-              className="linkFooter"
-            >
-              <BsFacebook />
-            </a>
-          </Tooltip>
-          <Tooltip title={instagramTooltip} arrow placement="top">
-            <a
-              href={"https://www.instagram.com/esncoruna/"}
-              target="_blank"
-              className="linkFooter"
-            >
-              <BsInstagram />
-            </a>
-          </Tooltip>
-          <Tooltip title={mapsTooltip} arrow placement="top">
-            <a
-              href={
-                "https://www.google.com/maps/place/Casa+do+Lagar+-+UDC/@43.332124,-8.412034,14z/data=!4m5!3m4!1s0x0:0xa2fa446abee0da28!8m2!3d43.3321242!4d-8.412034?hl=en"
-              }
-              target="_blank"
-              className="linkFooter"
-            >
-              <FiMapPin />
-            </a>
-          </Tooltip>
-          <Tooltip title={whatsappTooltip} arrow placement="top">
-            <a
-              // href={""}
-              target="_blank"
-              className="linkFooter"
-            >
-              <BsWhatsapp />
-            </a>
-          </Tooltip>
+          <a
+            href={"https://www.facebook.com/groups/1384367125377692"}
+            target="_blank"
+            className="linkFooter"
+            onMouseEnter={() => {
+              setSocialMedia("facebook");
+              showTooltipHandler();
+            }}
+            onMouseLeave={showTooltipHandler}
+          >
+            <BsFacebook />
+          </a>
+          <a
+            href={"https://www.instagram.com/esncoruna/"}
+            target="_blank"
+            className="linkFooter"
+            onMouseEnter={() => {
+              setSocialMedia("instagram");
+              showTooltipHandler();
+            }}
+            onMouseLeave={showTooltipHandler}
+          >
+            <BsInstagram />
+          </a>
+          <a
+            href={"https://goo.gl/maps/STEQjeQy6xMBMJay9"}
+            target="_blank"
+            className="linkFooter"
+            onMouseEnter={() => {
+              setSocialMedia("maps");
+              showTooltipHandler();
+            }}
+            onMouseLeave={showTooltipHandler}
+          >
+            <FiMapPin />
+          </a>
+          <a
+            // href={""}
+            target="_blank"
+            className="linkFooter"
+            onMouseEnter={() => {
+              setSocialMedia("whatsapp");
+              showTooltipHandler();
+            }}
+            onMouseLeave={showTooltipHandler}
+          >
+            <BsWhatsapp />
+          </a>
         </div>
         <div className="disclaimer">
           &#169; ESN Coruña - &nbsp;

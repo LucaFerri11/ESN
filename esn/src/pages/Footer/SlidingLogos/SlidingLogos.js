@@ -44,10 +44,10 @@ function SlidingLogos(props) {
   ))(() => ({
     [`& .${tooltipClasses.tooltip}`]: {
       // backgroundColor: "#f5f5f9",
-      color: "rgba(0, 0, 0, 0.87)",
+      color: "white",
       maxWidth: 220,
       fontFamily: "Roboto Slab, sans-serif",
-      fontSize: "0.5rem",
+      fontSize: "90%",
       border: "1px solid #dadde9",
     },
   }));
@@ -71,17 +71,21 @@ function SlidingLogos(props) {
                     <div
                       style={{
                         display: "flex",
-                        flexOrientation: "row",
                         alignItems: "center",
                       }}
                     >
                       <img src={i} style={{ width: "50%" }} />
-                      <h1 style={{ marginLeft: "10px" }}>Migliori Panini</h1>
+                      <span style={{ marginLeft: "10px" }}>
+                        Come to see our bird collection from all different part
+                        of the world
+                      </span>
                     </div>
                   </React.Fragment>
                 }
               >
-                <img src={i} style={{ width: "6.5vh" }} />
+                <a href="http://google.com" target="_blank">
+                  <img src={i} style={{ width: "6.5vh" }} />
+                </a>
               </HtmlTooltip>
             </div>
           );

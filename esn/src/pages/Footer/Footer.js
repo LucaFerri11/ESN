@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 import SlidingLogos from "./SlidingLogos/SlidingLogos";
 import { BsInstagram, BsFacebook, BsWhatsapp } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
@@ -31,7 +31,7 @@ function Footer() {
   const showTooltipHandler = () => {
     const leftContainer = document.getElementById("left-container");
     setTooltipWidth(leftContainer.offsetWidth - 16 + "px");
-    setTooltipShow(!tooltipShow);
+    setTooltipShow(true);
   };
 
   return (
@@ -55,7 +55,7 @@ function Footer() {
               setSocialMedia("facebook");
               showTooltipHandler();
             }}
-            onMouseLeave={showTooltipHandler}
+            onMouseLeave={() => setTooltipShow(false)}
           >
             <BsFacebook />
           </a>
@@ -67,7 +67,7 @@ function Footer() {
               setSocialMedia("instagram");
               showTooltipHandler();
             }}
-            onMouseLeave={showTooltipHandler}
+            onMouseLeave={() => setTooltipShow(false)}
           >
             <BsInstagram />
           </a>
@@ -79,7 +79,7 @@ function Footer() {
               setSocialMedia("maps");
               showTooltipHandler();
             }}
-            onMouseLeave={showTooltipHandler}
+            onMouseLeave={() => setTooltipShow(false)}
           >
             <FiMapPin />
           </a>
@@ -91,11 +91,12 @@ function Footer() {
               setSocialMedia("whatsapp");
               showTooltipHandler();
             }}
-            onMouseLeave={showTooltipHandler}
+            onMouseLeave={() => setTooltipShow(false)}
           >
             <BsWhatsapp />
           </a>
         </div>
+
         <div className="disclaimer">
           &#169; ESN Coruña - &nbsp;
           <Link to={"/privacy"} className="linkFooter">

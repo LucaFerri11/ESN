@@ -1,36 +1,22 @@
-.condition {    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5vw;
+.condition-title, .condition-intro, .condition-needs, .condition-call {
+    font-size: 1.8rem;
     font-family: "Roboto Slab", sans-serif;
 }
 
-.condition h1, 
-.condition h3,
-.condition h5,
-.condition span {
-    margin-bottom: -18px;
+.condition-intro, .condition-call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.1rem;
+    letter-spacing: .10rem; 
 }
 
-.condition span {
-    align-self: baseline;
+.condition-title, .condition-needs span {
+    color: rgb(26, 115, 232);
 }
 
-.condition button {
-    margin-top: 7px;
-    width: 8rem;
-    height: 4rem;
-    border-radius: 15px;
-    border-width: 4px;
-    background-color: rgba(245, 245, 245, 0.733);    
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.condition button:hover {
-    cursor: pointer;
-    background-color: #eaeedcf1;
-
+.condition-needs  {    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }

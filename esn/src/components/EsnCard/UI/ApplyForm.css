@@ -52,23 +52,6 @@
     align-items: center;
 }
 
-.btn {
-    width: 30%;
-    border-radius: 0.8rem;
-    margin-top: 1.2rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: white;
-    background-color: transparent;
-    border-color: white;
-    border-width: 5px;
-}
-
-.btn:hover {
-    background-color: rgba(92, 92, 92, 0.582);   
-}
-
 #alert {
     background-color: transparent;
     margin-left: -10px;

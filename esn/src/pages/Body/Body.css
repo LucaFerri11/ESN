@@ -1,10 +1,6 @@
 .body {
   display: flex;
-  align-items: center;
-  justify-items: center;
   justify-content: center;
-  width: 100%;
-  min-height: 77.7vh;
 }
 
 ::-webkit-scrollbar {

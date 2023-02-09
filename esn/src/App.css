@@ -1,20 +1,18 @@
+html {
+  font-size: 16px;
+}
+
 .app {
-  /* display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-content: center; */
-  /* flex-direction: column; */
-  /* background-color: #e5eaf5; */
-  width: 100%;
+  background-color: #35363a; 
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  position: relative;
-  background-color: #35363a;
 }
 
 .appWimage {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
-  position: relative;
   background-image: url("./assets/Images/BeachReunion.png");
   background-position: center;
   background-repeat: no-repeat;

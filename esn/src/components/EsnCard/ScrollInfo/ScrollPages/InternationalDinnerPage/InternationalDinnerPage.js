@@ -45,7 +45,7 @@ function InternationalDinnerPage() {
     FadeOut(1, 0)
   );
   const MoveInCenterBottom = batch(
-    Sticky(50, 75),
+    Sticky(50, 78),
     FadeIn(),
     MoveIn(0, 1000),
     FadeOut(0.8, 0)
@@ -71,7 +71,6 @@ function InternationalDinnerPage() {
           </Animator>
         </div>
         <Animator animation={MoveInCenterBottom}>
-          <br />
           <span>Like our International Dinner</span>
         </Animator>
       </div>

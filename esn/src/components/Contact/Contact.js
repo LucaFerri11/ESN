@@ -6,12 +6,7 @@ import SocialProfiles from "./SocialProfiles/SocialProfiles";
 function Contact() {
   return (
     <div className="mainContainer">
-      <div className="left">
-        <MailForm></MailForm>
-      </div>
-      {/* <div className="right">
-        <SocialProfiles></SocialProfiles>
-      </div> */}
+      <MailForm></MailForm>
     </div>
   );
 }

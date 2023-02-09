@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./EsnCard.css";
 import ScrollInfo from "./ScrollInfo/ScrollInfo";
 import TypeInstruction from "./TypeInstruction/TypeInstruction";
 import ApplyForm from "./UI/ApplyForm";

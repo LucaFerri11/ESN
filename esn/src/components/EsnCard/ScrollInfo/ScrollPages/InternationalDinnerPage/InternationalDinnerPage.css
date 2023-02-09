@@ -3,9 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.7vw;
-    font-family: "Roboto Slab", sans-serif;
-    font-weight: bold;
     max-width: 100%;
 }
 
@@ -13,4 +10,10 @@
     border-radius: 5px;
     border-style: solid;
     max-width: 100%;
+}
+
+.dinner-container span {
+    font-size: 2rem;
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
 }

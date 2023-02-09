@@ -114,9 +114,9 @@ function Card(props) {
               </Alert>
             )}
           </div>
-          <button type="submit" className="btn">
+          <Button type="submit" className="button">
             Send
-          </button>
+          </Button>
         </form>
       </div>
     );

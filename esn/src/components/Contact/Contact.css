@@ -1,6 +1,5 @@
 .mainContainer {
   background-color: transparent;
-  /* background-image: url('../../assets/Images/paper.jpg'); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,19 +15,3 @@
   justify-content: space-around;
   align-items: center;
 }
-
-/* .left {
-  float: left;
-  width: 60%;
-  display: flex;
-  align-items: flex-start;
-  height: 100%;
-  grid-area: header;
-}
-
-.right {
-  float: right;
-  width: 40%;
-  height: 100%;
-  grid-area: main;
-} */

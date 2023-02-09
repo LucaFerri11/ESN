@@ -24,7 +24,7 @@ function EsnCard(props) {
         <Animator animation={ZoomInScrollOut}>
           <span
             style={{
-              fontSize: "2.5vw",
+              fontSize: "2.5rem",
               fontFamily: "Roboto Slab, sans-serif",
             }}
           >
@@ -40,13 +40,15 @@ function EsnCard(props) {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              fontSize: "2.5vw",
+              fontSize: "2.5rem",
               fontFamily: "Roboto Slab, sans-serif",
               fontWeight: "bold",
             }}
           >
             <img src={SpinningGlobe} style={{ width: "9%" }} />
-            &nbsp; Cultural Exchange Events &nbsp;
+            &nbsp;
+            <span> Cultural Exchange Events </span>
+            &nbsp;
             <img src={SpinningGlobe} style={{ width: "9%" }} />
           </div>
         </Animator>

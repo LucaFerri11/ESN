@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import "./MailForm.css";
 import emailjs, { init } from "@emailjs/browser";
 import Alert from "@mui/material/Alert";
+import Button from "../../EsnCard/UI/Button";
 // import { ReCAPTCHA } from "react-google-recaptcha";
 
 function MailForm() {
@@ -107,9 +108,7 @@ function MailForm() {
             sitekey="6LcSLyEkAAAAAFmNW2aItDB--wJQpJrTeIaN-POM"
             size="normal"
           /> */}
-          <button type="submit" className="btn">
-            Send
-          </button>
+          <Button type="submit">Send</Button>
           {showResponse && (
             <Alert severity={isSucces ? "success" : "error"} className="alert">
               {isSucces ? (

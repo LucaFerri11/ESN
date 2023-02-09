@@ -20,18 +20,11 @@ function RyanairPage() {
     FadeOut(0.8, 0)
   );
   const MoveInCenterRight = batch(
-    Sticky(),
+    Sticky(55, 54),
     FadeIn(),
     MoveIn(1800, 0),
     MoveOut(-2500, 0),
     FadeOut(1, 0)
-  );
-  const MoveInMiddleLowRight = batch(
-    Sticky(60, 58),
-    FadeIn(),
-    MoveIn(1800, 0),
-    MoveOut(-2500, 0),
-    FadeOut(0.8, 0)
   );
 
   return (
@@ -44,27 +37,17 @@ function RyanairPage() {
           style={{
             display: "flex",
             flexDirection: "column",
-            alignItems: "center",
-            fontSize: "1.7vw",
+            fontSize: "1.7rem",
             fontFamily: "Roboto Slab, sans-serif",
             fontWeight: "bold",
+            letterSpacing: ".15rem",
           }}
         >
           <span>Ryanair 10% discount on European flights</span>
-          <span>
-            &nbsp; the possibility of adding a 20kg suitcase &#129523;
+          <span>the possibility of adding a 20kg suitcase &#129523;</span>
+          <span style={{ marginLeft: "40px" }}>
+            ...and many more in thousands of stores
           </span>
-        </div>
-      </Animator>
-      <Animator animation={MoveInMiddleLowRight}>
-        <div
-          style={{
-            fontSize: "1.7vw",
-            fontFamily: "Roboto Slab, sans-serif",
-            fontWeight: "bold",
-          }}
-        >
-          <span>...and many more in thousands of stores</span>
         </div>
       </Animator>
     </ScrollPage>

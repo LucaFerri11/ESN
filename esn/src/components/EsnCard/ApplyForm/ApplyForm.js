@@ -11,6 +11,7 @@ function Card(props) {
   const [enteredLastName, setEnteredLastName] = useState("");
   const [enteredStudy, setEnteredStudy] = useState("");
   const [isValid, setIsValid] = useState(true);
+  const [isSucces, setIsSuccess] = useState(false);
 
   const firstNameChangeHandler = (e) => {
     if (e.target.value.trim().length > 0) {
@@ -60,6 +61,8 @@ function Card(props) {
     if (!isValid) {
       return;
     }
+    console.log("HI");
+    setIsSuccess(true);
     // props.onSave(enteredId, enteredTeam);
   };
 
@@ -82,6 +85,11 @@ function Card(props) {
         {!isValid && (
           <Alert severity="error" id="alert">
             <strong>All the fields must be filled</strong>
+          </Alert>
+        )}
+        {!isSucces && (
+          <Alert severity="success" id="alert">
+            <strong>You have applied succesfully</strong>
           </Alert>
         )}
 

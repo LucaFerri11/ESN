@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "./MailForm.css";
 import emailjs, { init } from "@emailjs/browser";
 import Alert from "@mui/material/Alert";
-import Button from "../../EsnCard/UI/Button";
+import Button from "../../UI/Button";
 // import { ReCAPTCHA } from "react-google-recaptcha";
 
 function MailForm() {

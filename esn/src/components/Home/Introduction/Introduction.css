@@ -10,19 +10,18 @@
 }
 
 .counterBlock {
-  margin-top: 2.5vh;
+  margin-top: 2.4rem;
   color: rgb(26, 115, 232);
-  font-family: "Roboto Slab", sans-serif;
-  font-size: 1.8vw;
+  font-size: 3rem;
   font-weight: 700;
 }
 
 .counterBlock .counterTitle {
-  margin-top: -1.5vh;
-  font-size: 1.5vw;
+  margin-top: -1.6rem;
+  font-size: 2.4rem;
   color: rgb(20, 20, 20);
 }
 
 .title {
-  font-size: 3.2vw;
+  font-size: 4.4rem;
 }

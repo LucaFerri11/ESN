@@ -38,9 +38,8 @@ function SlidingLogos(props) {
   ))(() => ({
     [`& .${tooltipClasses.tooltip}`]: {
       color: "white",
-      maxWidth: 220,
-      fontFamily: "Roboto Slab, sans-serif",
-      fontSize: "90%",
+      maxWidth: "22rem",
+      fontSize: "1.6rem",
       border: "1px solid #dadde9",
     },
   }));
@@ -61,7 +60,7 @@ function SlidingLogos(props) {
                       }}
                     >
                       <img src={i} style={{ width: "50%" }} />
-                      <span style={{ marginLeft: "10px" }}>
+                      <span style={{ marginLeft: "1rem" }}>
                         Come to see our bird collection from all different part
                         of the world
                       </span>
@@ -70,7 +69,7 @@ function SlidingLogos(props) {
                 }
               >
                 <a href="http://google.com" target="_blank">
-                  <img src={i} style={{ width: "6.5vh" }} />
+                  <img src={i} style={{ width: "4.4rem" }} />
                 </a>
               </HtmlTooltip>
             </div>
@@ -89,7 +88,7 @@ function SlidingLogos(props) {
                       }}
                     >
                       <img src={i} style={{ width: "50%" }} />
-                      <span style={{ marginLeft: "10px" }}>
+                      <span style={{ marginLeft: "1rem" }}>
                         Come to see our bird collection from all different part
                         of the world
                       </span>
@@ -98,7 +97,7 @@ function SlidingLogos(props) {
                 }
               >
                 <a href="http://google.com" target="_blank">
-                  <img src={i} style={{ width: "6.5vh" }} />
+                  <img src={i} style={{ width: "4.4rem" }} />
                 </a>
               </HtmlTooltip>
             </div>

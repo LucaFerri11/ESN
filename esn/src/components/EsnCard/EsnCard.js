@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ScrollInfo from "./ScrollInfo/ScrollInfo";
 import TypeInstruction from "./TypeInstruction/TypeInstruction";
-import ApplyForm from "./UI/ApplyForm";
+import ApplyForm from "./ApplyForm/ApplyForm";
 
 function EsnCard() {
   const [scrollPosition, setScrollPosition] = useState(0);

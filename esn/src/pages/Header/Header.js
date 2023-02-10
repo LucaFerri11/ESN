@@ -7,42 +7,51 @@ function Header() {
 
   return (
     <div className="header">
-      {/* <div className="headerSpace"> */}
       <div className="header-container">
         <Link to={"/"}>
           <img
             src="https://esncoruna.org/sites/default/files/ES-coruna-logo-colour-RGB.png"
-            className="logo-header"
+            className="header-logo"
           ></img>
         </Link>
-        <div className="menu">
+        <div className="header-menu">
           <Link
             to={"/"}
-            className={location === "/" ? "link-selected" : "link"}
+            className={
+              location === "/" ? "header-link-selected" : "header-link"
+            }
           >
             About Us
           </Link>
           <Link
             to={"/gallery"}
-            className={location === "/gallery" ? "link-selected" : "link"}
+            className={
+              location === "/gallery" ? "header-link-selected" : "header-link"
+            }
           >
             Gallery
           </Link>
           <Link
             to={"/buddy"}
-            className={location === "/buddy" ? "link-selected" : "link"}
+            className={
+              location === "/buddy" ? "header-link-selected" : "header-link"
+            }
           >
             Buddy
           </Link>
           <Link
             to={"/esncard"}
-            className={location === "/esncard" ? "link-selected" : "link"}
+            className={
+              location === "/esncard" ? "header-link-selected" : "header-link"
+            }
           >
             ESN Card
           </Link>
           <Link
             to={"/contact"}
-            className={location === "/contact" ? "link-selected" : "link"}
+            className={
+              location === "/contact" ? "header-link-selected" : "header-link"
+            }
           >
             Contact
           </Link>

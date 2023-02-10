@@ -8,23 +8,20 @@
 
 .control-arrow {
   width: 10%;
-  height: 100%;
-  border-radius: 0.5rem;
+  height: 100%;  
+  border-radius: 5px;
 }
 
 .home {
   background-color: rgba(245, 245, 245, 0.85);
   border-radius: 10px;
-  letter-spacing: -0.125px;
-  font-family: "Roboto Slab", sans-serif;
   font-weight: 700;
   text-align: center;
   width: 85%;
-  height: 73vh;
 }
 
 .slide-container {
-  margin: 0% 0% 5% 0%;
+  margin: 0 0 3.2rem 0;
 }
 
 .flippingCard {
@@ -36,5 +33,5 @@
 }
 
 .flippingCard .cardTitle {
-  font-size: 3.2vw;
+  font-size: 4.4rem;
 }

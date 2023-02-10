@@ -2,17 +2,17 @@
 .flip-box {
   background-color: transparent;
   opacity: 0.9;
-  height: 52vh;
-  width: 38vw;
-  /* max-width: 100%; */
-  border-radius: 2rem;
+  height: 38rem;
+  width: 60rem;
+  max-width: 100%;
+  border-radius: 10px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip-box-inner {
-  border-radius: 2rem;
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.2);
   position: relative;
   width: 100%;
   height: 100%;
@@ -44,7 +44,7 @@
 /* Style the back side */
 .flip-box-back {
   /* text-align: center; */
-  border-radius: 2rem;
+  border-radius: 10px;
   background-color: #15a1d4de;
   color: white;
   transform: rotateX(180deg);
@@ -53,14 +53,11 @@
 .esncard {
   width: 100%;
   height: 100%;
-  border-radius: 2rem;
-  opacity: 1;
+  border-radius: 10px;
 }
 
 .esncardInfo {
-  height: 70%;
-  font-size: 2vh;
-  padding-top: 10%;
   display: flex;
   flex-direction: column;
+  font-size: 2rem;
 }

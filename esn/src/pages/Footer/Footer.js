@@ -15,9 +15,9 @@ function Footer() {
   const [tooltipWidth, setTooltipWidth] = useState("395px");
 
   const description = {
-    facebook: "Join the Facebook group to stay tuned on the latest events",
+    facebook: "Stay tuned on the latest events",
     instagram: "Follow us on Instagram",
-    whatsapp: "Join the Whatsapp group to start making new friends",
+    whatsapp: "Start making new friends",
     maps: "You can find us here",
   };
 
@@ -40,7 +40,7 @@ function Footer() {
         {tooltipShow && (
           <div className="tooltip-container" style={{ width: tooltipWidth }}>
             <img src={imgSrc[socialMedia]} style={{ width: "100%" }} />
-            <span style={{ paddingTop: "4px" }}>
+            <span style={{ paddingTop: "0.4rem" }}>
               {description[socialMedia]}
             </span>
           </div>
@@ -50,7 +50,7 @@ function Footer() {
           <a
             href={"https://www.facebook.com/groups/1384367125377692"}
             target="_blank"
-            className="linkFooter"
+            className="footer-link"
             onMouseEnter={() => {
               setSocialMedia("facebook");
               showTooltipHandler();
@@ -62,7 +62,7 @@ function Footer() {
           <a
             href={"https://www.instagram.com/esncoruna/"}
             target="_blank"
-            className="linkFooter"
+            className="footer-link"
             onMouseEnter={() => {
               setSocialMedia("instagram");
               showTooltipHandler();
@@ -74,7 +74,7 @@ function Footer() {
           <a
             href={"https://goo.gl/maps/STEQjeQy6xMBMJay9"}
             target="_blank"
-            className="linkFooter"
+            className="footer-link"
             onMouseEnter={() => {
               setSocialMedia("maps");
               showTooltipHandler();
@@ -86,7 +86,7 @@ function Footer() {
           <a
             // href={""}
             target="_blank"
-            className="linkFooter"
+            className="footer-link"
             onMouseEnter={() => {
               setSocialMedia("whatsapp");
               showTooltipHandler();
@@ -99,16 +99,16 @@ function Footer() {
 
         <div className="disclaimer">
           &#169; ESN Coruña - &nbsp;
-          <Link to={"/privacy"} className="linkFooter">
+          <Link to={"/privacy"} className="footer-link">
             Privacy
           </Link>
           &nbsp; - &nbsp;
-          <Link to={"/contact"} className="linkFooter">
+          <Link to={"/contact"} className="footer-link">
             Contact Us
           </Link>
         </div>
       </div>
-      <div className="logos">
+      <div className="footer-logos">
         <SlidingLogos />
       </div>
     </div>

@@ -8,11 +8,7 @@ function CardsList(props) {
   for (let i = 0; i < 8; i++) {
     cards.push(<Card />);
   }
-  return (
-    <div className="scroll">
-      <div className="MainContainer">{cards}</div>
-    </div>
-  );
+  return <div className="MainContainer">{cards}</div>;
 }
 
 export default CardsList;

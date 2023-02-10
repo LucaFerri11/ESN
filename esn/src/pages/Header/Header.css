@@ -10,41 +10,35 @@
   max-width: 100%;
   max-height: 50%;
   display: flex;
-  padding: 6px 15px;
+  padding: 1.2rem 1.6rem;
   background: ghostwhite;
   border-radius: 10px;
   position: fixed;
 }
 
-.logo-header {
+.header-logo {
   max-width: 100%;
-  width: 120px;
+  width: 12rem;
 }
 
-.menu {
-  margin-left: 40px;
+.header-menu {
+  margin-left: 3.6rem;
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 3.6rem;
 }
 
-.link-selected {
-  text-decoration-line: underline;
-  text-decoration-thickness: 2px;
-  color: rgb(0, 0, 0);
-  font-size: 2rem;
-}
-
-.link {
+.header-link {
   text-decoration: none;
   color: rgb(0, 0, 0, 0.6);
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
-.link:hover {
-  color: rgb(0, 0, 0);
+.header-link-selected, .header-link:hover {
   text-decoration-line: underline;
   text-decoration-thickness: 2px;
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
 }
 
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Gallery.css";
 import PhotoAlbum from "react-photo-album";
 import photos from "./photos.ts";

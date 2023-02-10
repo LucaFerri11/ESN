@@ -1,8 +1,8 @@
 .gallery {
   width: 95%;
   background-color: hsla(0, 0%, 0%, 0.35);
-  padding: 10px 22px 15px 22px;
-  border-radius: 15px;
-  margin-bottom: 70px;
-  margin-top: 10px;
+  padding: 0.8rem 2.4rem 1.6rem 2.4rem;
+  border-radius: 10px;
+  margin-bottom: 7.4rem;
+  margin-top: 1.2rem;
 }

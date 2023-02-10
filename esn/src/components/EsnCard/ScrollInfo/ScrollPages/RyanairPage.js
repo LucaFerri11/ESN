@@ -37,15 +37,15 @@ function RyanairPage() {
           style={{
             display: "flex",
             flexDirection: "column",
-            fontSize: "1.7rem",
-            fontFamily: "Roboto Slab, sans-serif",
+            gap: "0.4rem",
+            fontSize: "2.4rem",
             fontWeight: "bold",
             letterSpacing: ".15rem",
           }}
         >
           <span>Ryanair 10% discount on European flights</span>
           <span>the possibility of adding a 20kg suitcase &#129523;</span>
-          <span style={{ marginLeft: "40px" }}>
+          <span style={{ marginLeft: "4.8rem" }}>
             ...and many more in thousands of stores
           </span>
         </div>

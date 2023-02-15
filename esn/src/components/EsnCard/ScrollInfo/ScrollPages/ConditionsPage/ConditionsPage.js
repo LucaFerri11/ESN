@@ -8,7 +8,7 @@ import {
   MoveIn,
   Sticky,
 } from "react-scroll-motion";
-import Button from "../../../ApplyForm/Button";
+import Button from "../../../../UI/Button";
 const MoveInCenterTop = batch(Sticky(50, 25), FadeIn(), MoveIn(0, -500));
 const MoveInCenterRight = batch(Sticky(50, 35), FadeIn(), MoveIn(1800, 0));
 const MoveInCenterLeft = batch(Sticky(50, 54), FadeIn(), MoveIn(-1800, 0));

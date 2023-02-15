@@ -1,0 +1,8 @@
+.appling-card {
+  background-image: url("../../../../assets/Images/EsnCard.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  width: 50rem;
+}

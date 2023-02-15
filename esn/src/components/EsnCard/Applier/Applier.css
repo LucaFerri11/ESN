@@ -1,0 +1,8 @@
+.appling-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin: 2.4rem 0; */
+  /* flex: 0 1 50%; */
+  width: 100%;
+}

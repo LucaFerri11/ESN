@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ScrollInfo from "./ScrollInfo/ScrollInfo";
 import TypeInstruction from "./TypeInstruction/TypeInstruction";
-import ApplyForm from "./ApplyForm/ApplyForm";
+import Applier from "./Applier/Applier";
 
 function EsnCard() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -31,7 +31,7 @@ function EsnCard() {
       </div>
     );
   } else {
-    return <ApplyForm></ApplyForm>;
+    return <Applier />;
   }
 }
 
